@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  /* Inter ကို Main font အဖြစ်သုံးမယ်၊ အကယ်၍ Load မတက်ရင် standard sans-serif ကို သုံးမယ် */
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  -webkit-font-smoothing: antialiased; /* စာသားတွေကို ပိုကြည်လင်စေတယ် */
+  color: #1a1a1a; /* Pure Black ထက်စာရင် Dark Grey က ဖတ်ရတာ ပိုသက်သာတယ် */
+}
+
+
+header {
+    /* Option 1 ကို ဥပမာအနေနဲ့ သုံးပြမယ် */
+    background: linear-gradient(180deg, #ffffff 0%, #f8f9fa 100%);
+    border-bottom: 1px solid #e0e0e0; /* မျဉ်းတားလေးပါမှ Header က ပြတ်ပြတ်သားသား ရှိမှာ */
+    padding: 15px 0; /* Header ကို နည်းနည်း ပိုကျယ်စေပြီး အသက်ရှူချောင်စေတယ် */
+}
+
+.navbar .nav-item{
+  font-weight: bold;
+  color: #ffffff !important;
+}
+
