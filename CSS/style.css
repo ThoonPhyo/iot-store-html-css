@@ -38,21 +38,23 @@ header {
 }
 
 .products-section .card {
-  background-color: #ffffff; /* Card ကို အဖြူရောင် ထားပါ */
-
-  /* ပိုနုပြီး သဘာဝကျတဲ့ Shadow */
+  background-color: #ffffff;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05) !important;
-  /* Card တစ်ခုလုံး ကြွတက်ဖို့ */
+
+  /* ADD THESE TWO LINES */
+  border: 1px solid transparent !important; /* Pre-size the card so it doesn't grow on hover */
+  backface-visibility: hidden; /* Helps smooth out the movement */
 
   transition:
     transform 0.3s ease,
-    box-shadow 0.3s ease;
-  border: 0.9s ease;
+    box-shadow 0.3s ease,
+    border 0.3s ease;
 }
+
 .products-section .card:hover {
   transform: translateY(-8px);
   box-shadow: 0 8px 14px rgba(235, 76, 8, 0.3) !important;
-  border: 1px solid #fe624b !important;
+  border: 1px solid #fe624b !important; /* Now this only changes COLOR, not SIZE */
 }
 
 /* ပုံလေး ချဲ့ဖို့ (Optional) */
@@ -114,15 +116,14 @@ header {
   transition: all 0.3s ease;
 }
 
-
 /* footer section */
 .social-hover {
-    display: inline-block; /* Transform အလုပ်လုပ်ဖို့ ဒါပါရပါမယ် */
-    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* ချောမွေ့တဲ့ Bounce effect */
-    color: #6c757d !important; /* မူရင်းအရောင် မီးခိုးရောင် */
+  display: inline-block; /* Transform အလုပ်လုပ်ဖို့ ဒါပါရပါမယ် */
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* ချောမွေ့တဲ့ Bounce effect */
+  color: #6c757d !important; /* မူရင်းအရောင် မီးခိုးရောင် */
 }
 
 .social-hover:hover {
-    color: #fe624b !important; /* သင့်ရဲ့ Theme Color */
-    transform: scale(1.2) translateY(-1px); /* နည်းနည်းကြီးလာပြီး အပေါ်တက်သွားမယ် */
+  color: #fe624b !important; /* သင့်ရဲ့ Theme Color */
+  transform: scale(1.2) translateY(-1px); /* နည်းနည်းကြီးလာပြီး အပေါ်တက်သွားမယ် */
 }
